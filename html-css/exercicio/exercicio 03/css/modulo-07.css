@@ -1,0 +1,187 @@
+/* Importando CSS de Tabelas */
+@import url('tabelas.css');
+
+
+/* 
+
+	Herança
+
+	1. Sobreposição / Sobrescreve
+	2. Aplica a último estilo definido
+	3. Prioriza estilo específicas (com seletores mais próximos)
+	4. Se aplica a todas as propriedades
+
+ */
+
+
+html {
+	font-family: sans-serif;
+	color: #333333;
+}
+
+p {
+	color: #454545;
+}
+
+header p {
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+
+/* 
+
+	Combinadores 
+	
+	(espaço) seletor descendente 
+	(>) combinador de seletores filhos
+	(+) combinador de elementos irmãos adjacentes / que vem logo na sequencia
+	(~) combinador de elementos irmãos geral / após elemento de referência
+
+	
+*/
+
+
+header h2 {
+	font-weight: 100;
+}
+
+
+header > h2 {
+	font-weight: 600;
+}
+
+h2 + p {
+	background: #FFF;
+	color: #890303;
+}
+
+header h5 {
+	font-size: 1.2rem;
+}
+
+div ~ p {
+	text-transform: uppercase;
+}
+
+
+/* Pseudo-classes */
+
+a {
+	color: #555555;
+	text-decoration: none; /* o padrão é underline */
+	font-size: 1.5rem;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+a:visited {
+	color: #f00;
+}
+
+a:active {
+	color: #096;
+}
+
+a:hover {
+	color: #009;
+	background: #eee;
+}
+
+h2:hover {
+	color: #888;
+}
+
+
+/* 
+	Tipografia
+*/
+
+h1, h2 {
+	font-weight: 400;
+	font-family: 'Limelight', cursive;
+}
+
+div h1, div h2, div h3, div h4, div h5, div h6 {
+	padding-bottom: .8rem;
+}
+
+p {
+	font-weight: normal;
+	font-size: 1.4rem;
+}
+
+article p {
+	padding-bottom: 1rem;
+}
+
+article ul, article ol, article dl {
+	padding: 2rem 0 2rem 0;
+}
+
+article li, dd, dl {
+	padding: .2rem 0 .2rem 0;
+}
+
+div p {
+	padding-bottom: 1rem;
+}
+
+ul {
+	padding-left: .5rem;
+	margin-left: .5rem;	
+}
+
+li {
+	letter-spacing: 0.01rem;
+	font-family: sans-serif;
+	line-height: 1.5;
+}
+
+/* 
+
+	Cores
+
+*/
+
+body {
+	background: url('../images/pattern.jpg') center bottom repeat #EEEEEE;
+}
+
+section {
+	background: rgba(255, 255, 255, 0.75);
+}
+
+p {
+	color: #890303;
+}
+
+header,
+footer {
+	background-color: #890303;
+}
+
+footer p {
+	color: rgb(255, 255, 255);
+}
+
+.navegacao {
+	background-color: rgba(137, 3, 3, .8);
+	padding: 0.5rem;
+}
+
+.navegacao li a {
+	color: white;
+	font-size: 1.4rem;
+}
+
+.navegacao li a:hover {
+	background-color: rgba(150, 150, 200, .5);
+	color: #333333;
+}
+
+.table-ex h2 {
+	padding-top: 1rem;
+	padding-bottom: 0;
+}

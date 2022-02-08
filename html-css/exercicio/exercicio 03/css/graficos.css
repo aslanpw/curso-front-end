@@ -1,0 +1,31 @@
+div .box-content, #grafico-01, #grafico-02, #imagem-vetorial {
+    margin: 40px auto;
+}
+
+
+    /* circulo */
+#grafico-01 {
+    background-color: brown;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+#grafico-01 img {
+    width: 100%;
+    height: auto;
+}
+
+    /* triangulo */
+#grafico-02 {
+    background: transparent;
+    border-style: solid;
+    border-width: 60px 0 60px 120px;
+    border-color: transparent transparent transparent blue;
+    width: 60px;
+}
+
+#imagem-vetorial {
+    width: 100px;
+}

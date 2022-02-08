@@ -1,0 +1,260 @@
+/*  Arquivo CSS geral com estilos dos elementos de todas páginas  */
+
+* {
+	  box-sizing: border-box;
+	}
+
+	html {
+		margin: 0;
+		padding: 0;
+		font-family: serif;
+		font-size: 62.5%; /* equivalente a 10px, macete */
+	}
+
+	body {
+		background-color: white;
+	}
+
+	h1, h2, p, li {
+		font-family: Arial, Helvetica, sans-serif;
+		color: #454545;
+	}
+
+	#primeiro-link a {
+		color: #933;
+	}
+
+	ul {
+		font-size: 20px;
+	}
+
+	ul li {
+		font-size: 0.8em; 
+		font-size: 1.8rem;
+		width: 100%;
+	}
+
+	p {
+		font-size: 1.6rem; 
+	}
+
+	h2 {
+		font-size: 2rem;
+		height: 3rem;
+
+	}
+
+	.navegacao {
+		background-color: red;
+	}
+
+	.navegacao a {
+		color: #393;
+	}
+
+	form div {
+		padding-bottom: 2rem;
+	}
+
+	label {
+		margin: 1rem 0 1rem 0;
+		font-size: 1.4rem;
+		font-family: sans-serif;
+		font-weight: bold;
+		color: white;
+	}
+
+	input, textarea {
+		padding: 1rem;
+		background-color: #d0a9a9;
+		border-radius: 10px;
+	    border: 2px dotted white;
+	    color: white;
+	}
+
+	[type="text"], [type="email"], textarea, label {
+		width: 100%;
+		display: block;
+	}
+
+	/* Style the header */
+
+	header {
+	  background-color: #820000;
+	  font-size: 35px;
+	  color: white;
+	  display: flex;
+	  align-items: center;
+	  width: 100%;
+	  position: fixed;
+	  z-index: 1;
+      top: 0;
+	}
+
+	header ul {
+		background-color: transparent;
+	}
+
+
+	header li {
+		text-align: center;
+	}
+
+	header li a:hover {
+		border-bottom: 2px dotted white;
+	}
+
+	header nav {
+		width: 65%;
+		background: transparent;
+	}
+
+	header nav ul {
+		display: flex;
+	}
+
+	header img {
+		width: 7%;
+	    margin-left: 3%;
+	    border: 2px dashed white;
+	    padding: 4px;
+	    border-radius: 20px;
+		}
+
+	header h2 {
+		font-size: 6rem;
+		margin: 0 0 3rem 0;
+	}
+
+	header h3 {
+		font-size: 2rem;
+		margin: 0;
+	}
+
+	header div {
+		margin: auto;
+		margin-left: 3%;
+	    border-left: 3px dotted white;
+	    padding: 0px 0px 8px 34px
+	}
+
+	/* Create two columns/boxes that floats next to each other */
+	nav {
+	  float: left;
+	  width: 30%;
+	  padding: 29px;
+	}
+
+	/* Style the list inside the menu */
+	nav ul {
+	  list-style-type: none;
+	  padding: 0;
+	}
+
+	nav ul li a, h2, h3, p, blockquote {
+	  font-family: sans-serif;
+	  font-style: normal;
+	  color: white;
+	  text-decoration: none;
+	  margin: 0;
+	}
+
+	blockquote {
+		font-size: 11px;
+		margin-left: 6rem;
+	}
+
+section nav img {
+	margin-top: 3rem;
+	margin-left: 6rem;
+	padding: 10px;
+	border: 2px dashed white;
+	border-radius: 10px;
+}
+
+	section {
+		margin-top: 11.6em;
+		background-color: #260000;
+	}
+
+	section h1 {
+		font-size: 3rem;
+		color: white;
+		border: 2px dashed white;
+		border-radius: 10px;
+		padding: 5px;
+		width: 38%;
+	}
+
+	section article h1 {
+		width: 26%;
+	}
+
+	section nav li {
+		padding-top: 2rem;
+	}
+
+	section nav a {
+		text-decoration: none;
+		font-size: 1.6rem;
+		font-family: sans-serif;
+		color: white;
+	}
+
+	section nav a:hover {
+		border-bottom: 2px dotted white;
+	}
+
+	form {
+		background-color: #260000;
+		border-radius: 30px;
+		padding: 3rem;
+		margin: 2rem 0 2rem 0;
+	}
+
+	form p {
+		font-size: 12px;
+		color: white;
+	}
+
+	.pergunta {
+		display: flex;
+		align-items: center;
+	}
+
+	.submit input {
+		border-radius: 10px;
+	    border: 2px dotted white;
+	    color: white;
+	}
+
+	article {
+	  float: left;
+	  padding: 20px;
+	  width: 40%;
+	  background-color: #540000;
+	}
+
+	/* Clear floats after the columns */
+	section::after {
+	  background: #ccc;
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+	/* Style the footer */
+	footer {
+	  background-color: #820000;
+	  padding: 10px;
+	  text-align: center;
+	  color: white;
+	}
+
+	/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+	@media (max-width: 600px) {
+	  nav, article {
+	    width: 100%;
+	    height: auto;
+	  }
+}

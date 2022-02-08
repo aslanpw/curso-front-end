@@ -1,0 +1,165 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;  /*viewport height */
+    background-color: #efefef;
+    overflow: overlay;
+}
+
+.width-100 {
+    width: 100%;
+    background-color: aqua;
+    padding: 20px 0;
+    height: 400px;
+}
+
+.width-100 h2 {
+    width: 100%;
+}
+
+.width-100-2 {
+    width: 100%;
+    background-color: #510202;
+    padding: 5% 0;
+    height: 100%;
+}
+
+.width-100-2 h2 {
+    width: 100%;
+    padding: 3% 0 0 10%;
+    font-size: 3rem;
+    color: white;
+}
+
+.contact-options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contato-icon img {
+    width: 30%;
+    margin: 10px;
+}
+
+.contato-icon h3 {
+    font-size: 2rem;
+    color: white;
+}
+
+.contato-icon {
+    text-align: center;
+    margin-top: 10%;
+    background-color: #890303;
+    padding: 5%;
+}
+
+.contato-icon:hover {
+    -webkit-filter: brightness(50%);
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+article {
+    background-color: ivory;
+    width: 70%;
+    float: left;
+    box-sizing: border-box; /* considera o padding e border na largura e altura */
+    height: 100%;
+    padding: 20px 0 0 20px;
+}
+
+section {
+    overflow: hidden; /* Deixar a page de layouts fluidos com o section retangular */
+}
+
+.fixed-width {
+    background-color: lawngreen;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.background {
+    background-repeat: repeat-x;
+    background-color: lightcoral;
+    background-image: url(../images/pattern2.png);
+    width: 100%;
+    height: 36vh;
+}
+
+div img {
+    width: 33%;
+}
+
+.img-cafe{
+    border: 2px solid #890303;
+    background-color: #890303;
+    justify-content: space-between;
+    display: flex;
+}
+
+
+div .img-cafe img:hover {
+    -webkit-filter: brightness(50%);
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.example-content {
+    background-color: ivory;
+    width: 70%;
+    float: left;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+@media (max-width: 600px) {
+    section{
+        overflow: visible;
+    }
+
+    article {
+      width: 100%;
+      height: auto;
+      padding: 3rem;
+      overflow: visible;
+    }
+
+    .example-content {
+        width: 100%;
+    }
+
+    #cafe {
+        display: none;
+    }
+
+    div img {
+        width: 100%;
+    }
+
+    .contact-options {
+        display: block;
+    }
+
+    .contato-icon {
+        margin: 6rem 2rem 6rem 2rem;
+    }
+
+    .width-100-2 h2 {
+        padding: 5%;
+    }
+  }

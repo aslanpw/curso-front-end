@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>HTML - Layouts</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+	</head>
+	<body>
+
+		<header>
+			<img src="./img/front-end.png" alt="Imagem HTML CSS Javascript">
+			<div>
+				<h2>HTML</h2>
+				<h3>Curso Front-End</h3>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Quem somos</a></li>
+					<li><a href="#">Nossos cursos</a></li>
+					<li><a href="#">Contato</a></li>
+					<li><a href="#">Área do Aluno</a></li>
+					<li><a href="#">Biblioteca</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section>
+			<nav>
+				<h1>Método 1</h1>
+				<p>Aqui você conversa diretamente conosco. É o método mais prático e rápido.</p>
+				<ul>
+					<li><p>Whatsapp</p></li>
+					<a href="https://web.whatsapp.com/">||| (00) 00000-0000</a>
+					<li><p>Telegram</p></li>
+					<a href="https://web.telegram.org/">||| (99) 99999-9999</a>
+					<li><p>Telefone</p></li>
+					<a href="tel:">||| (66) 66666-6s666</a>
+					<li><p>E-mail</p></li>
+					<a href="https://outlook.live.com">||| cursofrontend@curso.com</a>
+				</ul>
+				<img width="250" src="./img/linguica1.jpg" alt="homem-formado">
+				<blockquote>Adrianah com H<br>"Nem fiz esse curso, mas deve ser bom."</blockquote>
+			</nav>
+
+			<article>
+				
+				<h1>Método 2</h1>
+				<p>Vive no século XVIII? Preencha os campos abaixo:</p>
+
+				<form method="post">
+					
+					<div>
+						<label for="nome">Nome</label>
+						<input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+					</div>
+
+					<div>
+						<label for="email">E-mail</label>
+						<input type="email" name="email" id="email" placeholder="Digite seu email">
+					</div>
+
+					<div>
+						<label for="mensagem">Mensagem</label>
+						<textarea name="mensagem" id="mensagem" rows="5"></textarea>
+					</div>
+
+					<div class="pergunta">
+						<label>Qual linguagem você prefere?</label>
+						<input type="radio" name="linguagens" value="html"> <p>HTML</p>
+						<input type="radio" name="linguagens" value="css"> <p>CSS</p>
+						<input type="radio" name="linguagens" value="javascript"> <p>Javascript</p>
+					</div>
+
+						<div class="pergunta">
+						<label>Quais linguagens você sabe?</label>
+						<input type="checkbox" name="linguagens" value="html"> <p>HTML</p>
+						<input type="checkbox" name="linguagens" value="css"> <p>CSS</p>
+						<input type="checkbox" name="linguagens" value="javascript"> <p>Javascript</p>
+					</div>
+
+					<div>
+						<label>Como conheceu a gente?</label>
+						<select>
+							<option value="Propaganda">Propaganda</option>
+							<option value="Amigo">Amigo</option>
+							<option value="Nop" selected>Não faço ideia</option>
+						</select>
+					</div>
+
+					<div class="submit">
+						<input type="submit" name="submit">
+					</div>
+
+				</form>
+
+			</article>
+
+				<nav>
+					<h1>Método 3</h1>
+					<p>Para você que só perdeu o celular.</p>
+					<ul>
+						<li><p>Facebook</p></li>
+						<a href="https://www.facebook.com">||| Messenger</a>
+						<li><p>Instagram</p></li>
+						<a href="https://www.instagram.com">||| Direct</a>
+						<li><p>Discord</p></li>
+						<a href="https://www.discord.com">||| Grupo</a>
+						<li><p>GitHub</p></li>
+						<a href="https://www.github.com">||| Esse é bom</a>
+					</ul>
+					<img width="250" src="./img/linguica2.jpg" alt="mulher-formada">
+					<blockquote>Robson da Silva<br>"Agora sou desempregado, mas com diploma."</blockquote>
+				</nav>
+
+
+		</section>
+
+		<footer>
+			<p>Desenvolvido por Breno</p>
+		</footer>
+
+	</body>
+</html>
