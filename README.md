@@ -35,3 +35,12 @@ Informação de alteração
 
 ## Gitflow
 Fluxo do Git
+
+
+### Branchs
+São ramificações / versões paralelas
+
+  - main / master (vai para a produção, quando o projeto é publicado)
+  - develop
+  - DOD Definition of Done: critérios de aceite
+  - versionamento 1.0.0
