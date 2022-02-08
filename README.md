@@ -27,6 +27,8 @@ https://git-scm.com/
 ## Comits
 Informação de alteração
   - após testado todo seu código
+  - git add *
+  - git commit -m "mensagem"
 
 ## Gitflow
 Fluxo do Git
