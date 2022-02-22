@@ -202,16 +202,25 @@ section .nav-lateral nav ul li:hover {
 
 .main-col-4 img {
     width: 100%;
+    margin-bottom: 2rem;
 }
 
 footer {
     background-color: #2e2e2e;
     font-size: 15px;
     color: white;
-    padding: 3rem;
+    padding: 3rem 3rem 2rem;
     align-content: center;
     text-align: center;
-    margin-top: 3rem;
+}
+
+footer p {
+    padding-bottom: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #b2a574;
 }
 
 #mobile {
@@ -235,6 +244,75 @@ footer {
 .dropdown-item {
     display: block;
     
+}
+
+.form {
+    padding: 2rem;
+}
+
+html .cog-cognito--styled .cog-button--primary, html .cog-cognito--styled .cog-page__navigation .cog-button, :root:root:root:root:root .cog-cognito--styled .cog-button--primary, :root:root:root:root:root .cog-cognito--styled .cog-page__navigation .cog-button {
+    min-width: 120px !important;
+    text-align: center;
+    background-color: #b2a574;
+    border: 1px solid #e9b600;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: 'Pridi', serif;;
+}
+
+html .cog-cognito--styled .cog-header h1, :root:root:root:root:root .cog-cognito--styled .cog-header h1 {
+    display: none;
+}
+
+html .cog-label, :root:root:root:root:root .cog-label {
+    font-weight: normal;
+    font-family: 'Pridi', serif;
+}
+
+html .cog-abuse, .cog-branding, .cog-branding--minimal {
+    visibility: hidden !important;
+    display: none !important;
+}
+
+html .cog-cognito *, html .cog-cognito ::before, html .cog-cognito ::after, :root:root:root:root:root .cog-cognito *, :root:root:root:root:root .cog-cognito ::before, :root:root:root:root:root .cog-cognito ::after {
+    width: 100% !important;
+}
+
+.central {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.central h3 {
+    color: #b2a574;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.central p {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 3rem 0 0;
+}
+
+.form-article {
+    margin-top: 5rem;
+    border-top: 1.5px solid #6a6a6a;
+    padding: 5rem 0 5rem;
+    background-color: #efebdb;
+}
+
+html .cog-form__container, :root:root:root:root:root .cog-form__container {
+    background-color: #efebdb !important;
+}
+
+html .cog-row, :root:root:root:root:root .cog-row {
+    margin-left: 0 !important;
+}
+
+html .cog-cognito *, html .cog-cognito ::before, html .cog-cognito ::after, :root:root:root:root:root .cog-cognito *, :root:root:root:root:root .cog-cognito ::before, :root:root:root:root:root .cog-cognito ::after {
+    margin: 0 auto;
 }
 
 @media (max-width: 768px) {
@@ -299,6 +377,20 @@ footer {
         font-size: 3rem;
     }
 
+    .form-article p {
+        text-align: justify;
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .form {
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    html .cog-cognito--styled .cog-button--primary, html .cog-cognito--styled .cog-page__navigation .cog-button, :root:root:root:root:root .cog-cognito--styled .cog-button--primary, :root:root:root:root:root .cog-cognito--styled .cog-page__navigation .cog-button {
+        margin: 0 auto;
+    }
 
     #desktop {
         display: none;
