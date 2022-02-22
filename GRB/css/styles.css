@@ -6,6 +6,11 @@ body {
     font-family: 'Pridi', serif;    
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -70,7 +75,6 @@ section article nav ol li a {
     font-weight: 600;
     border-bottom: 1.5px solid #6a6a6a;
     color: #626262;
-    width: 100%;
 }
 
 h1 {
