@@ -189,7 +189,7 @@ section .nav-lateral nav ul li:hover {
 
 .main-col-4 h3 {
     color: #b2a574;
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 500;
     line-height: 10rem;
 }
@@ -319,6 +319,7 @@ html .cog-cognito *, html .cog-cognito ::before, html .cog-cognito ::after, :roo
     margin: 0 auto;
 }
 
+
 @media (max-width: 768px) {
     section nav ul {
         display: inherit;
@@ -344,6 +345,10 @@ html .cog-cognito *, html .cog-cognito ::before, html .cog-cognito ::after, :roo
 
     footer {
         font-size: 12px;
+    }
+
+    section article nav ol {
+        display: none;
     }
 
     .main-content {
