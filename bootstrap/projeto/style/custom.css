@@ -1,0 +1,40 @@
+
+section {
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+
+input, textarea {
+    margin-bottom: 1rem;
+}
+
+
+header, .line-bottom {
+    border-bottom: 1px solid black;
+}
+
+.line-bottom {
+    padding-bottom: 4rem;
+}
+
+.card {
+    width: 32%;
+    float: left;
+    margin: 5px;
+}
+
+.custom-header {
+    margin: 1rem 0 1rem 0;
+}
+
+.custom-active:hover {
+    color: #ffa700;
+    border-bottom: 5px #ffa700 solid;
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 100%;
+        float: none;
+    }
+}
