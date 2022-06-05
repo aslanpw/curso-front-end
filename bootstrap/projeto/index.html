@@ -9,18 +9,16 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-
     <title>Document</title>
 </head>
-<body>
-    
-    <header>
+<body>  
+    <header class="background-personalizado text-white">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12 custom-header">
-                    <ul class="nav justify-content-end">
-                        <li class="nav-item"><a class="nav-link active" href="#">Encontre uma loja AirTravel</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#central">Central de atendimento: (xx) xxxx - xxxx  |  Televendas: xxxx xxx xxxx</a></li>
+                    <ul class="nav justify-content-end" id="block-color">
+                        <li class="nav-item"><a class="nav-link active texto-preto block-color" href="#">Encontre uma <b>AirTravel</b></a></li>
+                        <li class="nav-item"><a class="nav-link texto-preto block-color" href="#central">Central de atendimento: <b>(xx) xxxx - xxxx</b>  |  Televendas: <b>xxxx xxx xxxx</b></a></li>
                     </ul>
                     
                 </div>
@@ -28,19 +26,19 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-2 col-sm-12 custom-header">
-                    <h1>AirTravel</h1>                  
+                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-12 custom-header">
+                    <h1 class="text-center" style="margin-top: 0.7rem;">AirTravel</h1>                  
                 </div>
-                <div class="col-md-6 col-sm-12 custom-header">
-                    <ul class="nav justify-content-start">
-                        <li class="nav-item"><a class="nav-link custom-active" href="#passagens">Passagens</a></li>
-                        <li class="nav-item"><a class="nav-link custom-active" href="#hotéis">Hotéis</a></li>
-                        <li class="nav-item"><a class="nav-link custom-active" href="#pacotes">Pacotes</a></li>
-                        <li class="nav-item"><a class="nav-link custom-active" href="#cruzeiros">Cruzeiros</a></li>
-                        <li class="nav-item"><a class="nav-link custom-active" href="#contato">Contato</a></li>
+                <div class="col-xl-6 col-lg-4 col-md-5 col-sm-12 custom-header">
+                    <ul class="nav justify-content-around flex-column-editado align-items-center-mobile mobile-transparent-color" style="margin-top: 1rem;">
+                        <li class="nav-item"><a class="nav-link custom-active texto-branco" href="#passagens">Passagens</a></li>
+                        <li class="nav-item"><a class="nav-link custom-active texto-branco" href="#hotéis">Hotéis</a></li>
+                        <li class="nav-item"><a class="nav-link custom-active texto-branco" href="#pacotes">Pacotes</a></li>
+                        <li class="nav-item"><a class="nav-link custom-active texto-branco" href="#cruzeiros">Cruzeiros</a></li>
+                        <li class="nav-item"><a class="nav-link custom-active texto-branco" href="#contato">Contato</a></li>
                     </ul>
                 </div>
-                <div class="col-md-4 col-sm-12 custom-header">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 custom-header">
                     <div class="input-group">
                       <input class="form-control" type="search" placeholder="Pesquisar" aria-label="Search" style="border-right: none;">
                       <div class="input-group-append">
@@ -52,156 +50,173 @@
         </div>
     </header>
 
-    <section id="pacotes">
-        <div class="container line-bottom">
-            <div class="row">
-                <div class="col-md-12 col-sm-12">
-                    <h2>Para onde vamos?</h2>
+    <article>
+        <section id="pacotes">
+            <div class="container line-bottom">
+                <div class="row align-mobile">
+                    <div class="col">
+                        <div class="col-md-12 col-sm-12">
+                            <h2>Para onde vamos?</h2>
+                        </div>
+                        <div class="col-md-12 col-sm-12 justify-content-start-mobile row">
+                                <div class="container col-md-9 col-sm-12 row">
+                                <div class="container col-md-12 col-sm-12 row custom-header">
+                                <div class="col-md-4 col-sm-12 separador-mobile">
+                                    <h6>Origem</h6>
+                                    <div class="input-group">
+                                    <input class="form-control" type="search" placeholder="De onde vai sair?" aria-label="Search" style="border-right: none;">
+                                    <div class="input-group-append">
+                                        <div class="input-group-text" style="background-color: #FFF"><i class="fas fa-search"></i></div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-12 separador-mobile">
+                                    <h6>Data de ida</h6>
+                                    <div class="input-group">
+                                        <input class="form-control" type="date" placeholder="Data de ida">     
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-12 separador-mobile">
+                                    <h6>Data de volta</h6>
+                                    <div class="input-group">
+                                        <input class="form-control" type="date" placeholder="Data de volta">     
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="container col-md-12 col-sm-12 row custom-header">
+                                <div class="col-md-4 col-sm-12 separador-mobile">
+                                    <h6>Destino</h6>
+                                    <div class="input-group">
+                                    <input class="form-control" type="search" placeholder="Para onde vai ?" aria-label="Search" style="border-right: none;">
+                                    <div class="input-group-append">
+                                        <div class="input-group-text" style="background-color: #FFF"><i class="fas fa-search"></i></div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-12 separador-mobile">
+                                    <h6>Reservas</h6>
+                                        <div class="input-group">
+                                            <input class="form-control" type="number" placeholder="Número de Quartos">
+                                            <div class="input-group-append">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-12 separador-mobile">
+                                    <h6>Quantas pessoas por quarto?</h6>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="opcao1">
+                                        <label class="form-check-label" for="inlineRadio1">1</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="opcao2">
+                                        <label class="form-check-label" for="inlineRadio2">2</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="opcao3">
+                                        <label class="form-check-label" for="inlineRadio3">3</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="opcao3">
+                                        <label class="form-check-label" for="inlineRadio4">4</label>
+                                    </div>
+                                </div> 
+                                </div>
+                                </div>
+                            <a class="btn btn-lg btn-success col-md-3 flex-center botao01"><p class="button01">Ver Pacotes</p></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-12 col-sm-12 justify-content-start row">
-                    <div class="container col-md-9 col-sm-12 row">
-                    <div class="container col-md-12 col-sm-12 row custom-header">
-                    <div class="col-md-4 col-sm-12">
-                        <div class="input-group">
-                          <input class="form-control" type="search" placeholder="De onde vai sair?" aria-label="Search" style="border-right: none;">
-                          <div class="input-group-append">
-                            <div class="input-group-text" style="background-color: #FFF"><i class="fas fa-search"></i></div>
-                          </div>
-                        </div>
-                      </div>
-                    <div class="col-md-4 col-sm-12">
-                    <div class="input-group">
-                        <input class="form-control" type="search" placeholder="Data de ida" aria-label="Search" style="border-right: none;">
-                        <div class="input-group-append">
-                        <div class="input-group-text" style="background-color: #FFF"><i class="fas fa-search"></i></div>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12">
-                    <div class="input-group">
-                        <input class="form-control" type="search" placeholder="Quartos" aria-label="Search" style="border-right: none;">
-                        <div class="input-group-append">
-                        <div class="input-group-text" style="background-color: #FFF"><i class="fas fa-search"></i></div>
-                        </div>
-                    </div>
-                    </div>
-                    </div>
-                    <div class="container col-md-12 col-sm-12 row custom-header">
-                     <div class="col-md-4 col-sm-12">
-                        <div class="input-group">
-                          <input class="form-control" type="search" placeholder="Para onde vai ?" aria-label="Search" style="border-right: none;">
-                          <div class="input-group-append">
-                            <div class="input-group-text" style="background-color: #FFF"><i class="fas fa-search"></i></div>
-                          </div>
-                        </div>
-                      </div>
-                    <div class="col-md-4 col-sm-12">
-                    <div class="input-group">
-                        <input class="form-control" type="search" placeholder="Data de volta" aria-label="Search" style="border-right: none;">
-                        <div class="input-group-append">
-                        <div class="input-group-text" style="background-color: #FFF"><i class="fas fa-search"></i></div>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12">
-                    <div class="input-group">
-                        <input class="form-control" type="search" placeholder="Pessoas" aria-label="Search" style="border-right: none;">
-                        <div class="input-group-append">
-                        <div class="input-group-text" style="background-color: #FFF"><i class="fas fa-search"></i></div>
-                        </div>
-                    </div>
-                    </div>
-                    </div>
             </div>
-            <a class="btn btn-lg btn-success col-md-3">Saiba Mais</a>
-        </div>
-    </section>
+        </section>
 
-    <section id="sobre">
+        <section id="sobre">
+            <div class="container line-bottom">
+                <div class="row">
+                    <div class="col-md-7 col-sm-12">
+                        <h2>Sobre Nós</h2>
+                        <p>Nós da AirTravel somos uma agência de viagens super preparada e estamos prontos para ajudar você a chegar onde deseja.</p>
+                        <p>Com uma frota de vans, ônibus e aviões, nós buscamos a excelência em tudo que levamos até você. Seja uma simples viagem ou um roteiro de semanas, estamos prontos para te levar do polo norte ao polo sul sem burocracias, tudo com máxima segurança, conforto e estilo. Além de tudo, de uma forma que cabe no seu bolso.</p>
+                        <a class="btn btn-lg btn-success mobile-response">Saiba Mais</a>
+                    </div>
+                    <div class="col-md-5 col-sm-12">
+                        <img src="./images/sobre-nos.jpg" alt="Imagem Exemplo" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="produtos">
+            <div class="container line-bottom">
+                <div class="row">
+                    <div class="col">
+                        <h2>Vistas Inesquecíveis</h2>
+                        <div class="card">
+                            <img src="./images/tirol-italia.jpg" alt="Imagem Exemplo" class="img-fluid">
+                            <div class="card-body cor-base">
+                                <h5 class="card-title">Conheça a Italia</h5>
+                                <p class="card-text">Parque Natural Fanes-Sennes-Prags no sul de Tirol, Itália.</p>
+                                <a class="btn btn-primary mobile-response margin-button" data-bs-toggle="modal" data-bs-target="#modal-1">Pacotes</a>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="./images/bradenton-florida.jpg" alt="Imagem Exemplo" class="img-fluid">
+                            <div class="card-body cor-base">
+                                <h5 class="card-title">Conheça a Flórida</h5>
+                                <p class="card-text">Bradenton Riverwalk é um espaço natural ao longo do rio Manatee, Flórida</p>
+                                <a class="btn btn-primary mobile-response" data-bs-toggle="modal" data-bs-target="#modal-2">Pacotes</a>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="./images/tumba-egito.jpg" alt="Imagem Exemplo" class="img-fluid">
+                            <div class="card-body cor-base">
+                                <h5 class="card-title">Conheça o Egito</h5>
+                                <p class="card-text">Tumba de Ramsés é considerada uma das mais bonitas do Egito Antigo</p>
+                                <a class="btn btn-primary mobile-response" data-bs-toggle="modal" data-bs-target="#modal-3">Pacotes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="background-personalizado02" id="contato">
+            <div class="container space-contact">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <h2>Pacotes Personalizados</h2>
+                        <p>Planeje sua viagem, a seu modo. Nós cuidamos do resto.</p>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <form class="form">
+
+                            <div class="input-group">
+                                <input class="form-control" type="text" name="nome" placeholder="Digite seu nome">
+                            </div>
+
+                            <div class="input-group">
+                                <input class="form-control" type="text" name="email" placeholder="Digite seu email">
+                            </div>
+
+                            <div class="input-group">
+                                <textarea class="form-control" name="" rows="5" placeholder="Descreva aqui para nós a sua ideia, estaremos felizes em ajudar!"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-lg btn-success mobile-response">Quero viajar!</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+
+    <footer class="line-top">
         <div class="container">
-            <div class="row">
-                <div class="col-md-7 col-sm-12">
-                    <h2>Sobre Nós</h2>
-                    <p>Nós da AirTravel somos uma agência de viagens super preparada e estamos prontos para ajudar você a chegar onde deseja.</p>
-                    <p>Com uma frota de vans, ônibus e aviões, nós buscamos a excelência em tudo que levamos até você. Seja uma simples viagem ou um roteiro de semanas, estamos prontos para te levar do polo norte ao polo sul sem burocracias, tudo com máxima segurança, conforto e estilo. Além de tudo, de uma forma que cabe no seu bolso.</p>
-                    <a class="btn btn-lg btn-success">Saiba Mais</a>
-                </div>
-                <div class="col-md-5 col-sm-12">
-                    <img src="./images/sobre-nos.jpg" alt="Imagem Exemplo" class="img-fluid">
-                </div>
-            </div>
+        <h6>Desenvolvido por <strong>Breno Valentim</strong> aka <strong>Aslan</strong></h6>
         </div>
-    </section>
-
-    <section id="produtos">
-
-        <div class="container">
-            <div class="row">
-                <div class="col">
-
-                    <h2>Vistas Inesquecíveis</h2>
-                    <div class="card">
-                        <img src="./images/tirol-italia.jpg" alt="Imagem Exemplo" class="img-fluid">
-                        <div class="card-body">
-                            <h5 class="card-title">Conheça a Italia</h5>
-                            <p class="card-text">Parque Natural Fanes-Sennes-Prags no sul de Tirol, Itália.</p>
-                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">Pacotes</a>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="./images/bradenton-florida.jpg" alt="Imagem Exemplo" class="img-fluid">
-                        <div class="card-body">
-                            <h5 class="card-title">Conheça a Flórida</h5>
-                            <p class="card-text">Bradenton Riverwalk é um espaço natural ao longo do rio Manatee, Flórida</p>
-                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-2">Pacotes</a>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="./images/tumba-egito.jpg" alt="Imagem Exemplo" class="img-fluid">
-                        <div class="card-body">
-                            <h5 class="card-title">Conheça o Egito</h5>
-                            <p class="card-text">Tumba de Ramsés é considerada uma das mais bonitas do Egito Antigo</p>
-                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-3">Pacotes</a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <section id="contato">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-12">
-                    <h2>Pacotes Personalizados</h2>
-                    <p>Planeje sua viagem, a seu modo. Nós cuidamos do resto.</p>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <form class="form">
-
-                        <div class="input-group">
-                            <input class="form-control" type="text" name="nome" placeholder="Digite seu nome">
-                        </div>
-
-                        <div class="input-group">
-                            <input class="form-control" type="text" name="email" placeholder="Digite seu email">
-                        </div>
-
-                        <div class="input-group">
-                            <textarea class="form-control" name="" rows="5" placeholder="Descreva aqui para nós a sua ideia, estaremos felizes em ajudar!"></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn-lg btn-success">Quero viajar!</button>
-
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+    </footer>
 
     <div class="modal fade" id="modal-1">
         <div class="modal-dialog">

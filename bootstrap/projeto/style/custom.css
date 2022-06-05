@@ -1,6 +1,5 @@
 
 section {
-    padding-bottom: 4rem;
     padding-top: 4rem;
 }
 
@@ -9,18 +8,50 @@ input, textarea {
 }
 
 
-header, .line-bottom {
-    border-bottom: 1px solid black;
+header, footer, .line-bottom {
+    border-bottom: 1px dotted black;
+}
+
+article {
+    color: #897861;
+    background-color: #f9f3e4;
+}
+
+footer {
+    background-color: #3a3939;
+    color: whitesmoke;
+}
+
+footer .container {
+    text-align: center;
+}
+
+.button01 {
+    color: white !important; 
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 0 auto;
+}
+
+.flex-center {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
 }
 
 .line-bottom {
     padding-bottom: 4rem;
 }
 
+.space-contact {
+    padding-bottom: 4rem;
+}
+
 .card {
-    width: 32%;
+    width: 31%;
     float: left;
     margin: 5px;
+    min-height: 22rem;
 }
 
 .custom-header {
@@ -28,13 +59,180 @@ header, .line-bottom {
 }
 
 .custom-active:hover {
-    color: #ffa700;
-    border-bottom: 5px #ffa700 solid;
+    color: white;
+    border-bottom: 5px whitesmoke solid;
+    background-color: #3a3939;
+}
+.justify-content-start-mobile{
+    -ms-flex-pack: start!important;
+    justify-content: flex-start!important;
 }
 
+.input-group {
+    margin: 1rem 0;
+}
+
+.line-top {
+    border-top: 1px solid black;
+    padding: 1rem 0;
+}
+
+.mobile-response {
+    color: white !important;
+    font-weight: bold !important;
+    font-size: 1rem !important;
+    background-color: #744f33 !important;
+    border-color: #ac7d4c !important;
+}
+
+#produtos h2 {
+    width: 100%;
+}
+
+.texto-branco {
+    color: white !important;
+}
+
+.texto-preto {
+    color: #3a3939;
+}
+
+.background-personalizado {
+    background-image: url(../images/capa.jpg);
+    background-position-y: 50rem;
+    background-size: cover;
+    padding: 1rem 0 7rem 0;
+}
+
+.background-personalizado02 {
+    background-image: url(../images/capa-inferior.jpg);
+    background-position-y: 40rem;
+    background-size: cover;
+}
+
+.mobile-transparent-color{
+    background-color: rgba(5, 5, 5, 0.3);
+}
+
+.block-color {
+    background-color: rgba(226, 226, 226, 0.781);
+    margin: 0.2rem 0 0 1rem;
+}
+.block-color:hover {
+    color: white;
+    background-color: #3a3939;
+}
+.cor-base {
+    background-color: #e6e0d2;
+}
+
+.botao01 {
+    background-color: #744f33 !important;
+    border-color: #744f33 !important;
+}
+
+.botao01:hover {
+    background-color: #3a3939 !important;
+    border-color: #3a3939 !important;
+}
+
+.mobile-response:hover {
+    background-color: #3a3939 !important;
+    border-color: #3a3939 !important;
+}
+
+@media only screen and (max-width: 1024px) {
+    .background-personalizado {
+        background-position-y: 40rem;
+    }
+    .background-personalizado02 {
+        background-position-y: 35rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .button01 {
+        font-size: 1rem;
+    }
+    .botao01 {
+        margin: auto;
+    }
+    .margin-button {
+        margin-top: 1.5rem !important;
+    }
+    .background-personalizado {
+        background-position-y: 0;
+    }
+    .background-personalizado02 {
+        background-position-y: 0rem;
+    }
+}
+
+
 @media only screen and (max-width: 600px) {
+
+    h2 {
+        font-size: 1.5rem !important;
+    }
+
+    .align-items-center-mobile {
+        -ms-flex-align: center!important;
+        align-items: center!important;
+    }
+
+    .flex-column-editado {
+        -ms-flex-direction: column!important;
+        flex-direction: column!important;
+    }
+
+    .row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .justify-content-start-mobile {
+        justify-content: center !important;
+    }
+
+    .separador-mobile {
+        margin: 1rem 0;
+    }
+
+    .align-mobile {
+        justify-content: center;
+    }
+    
     .card {
         width: 100%;
         float: none;
+        margin: 1rem 0;
     }
+
+    .mobile-response {
+        width: 100%;
+        margin: 1rem 0;
+        color: white !important;
+        font-weight: bold !important;
+        font-size: 1rem !important;
+    }
+    .background-personalizado {
+        background-position-y: 0;
+        background-position-x: 48rem;
+    }
+    .background-personalizado02 {
+        background-position-y: 0rem;
+        background-position-x: 50rem;
+    }
+    .block-color {
+        border: none;
+        background-color: rgba(226, 226, 226, 0);
+        margin: 0;
+    }
+    #block-color {
+        justify-content: space-evenly !important;
+        background-color: rgba(226, 226, 226, 0.781);
+    }
+
 }
