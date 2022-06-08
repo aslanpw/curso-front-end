@@ -141,6 +141,15 @@ footer .container {
     border-color: #3a3939 !important;
 }
 
+@media only screen and (min-width: 1800px) {
+    .background-personalizado {
+        background-position-y: 60rem;
+    }
+    .background-personalizado02 {
+        background-position-y: 45rem;
+    }
+}
+
 @media only screen and (max-width: 1024px) {
     .background-personalizado {
         background-position-y: 40rem;
