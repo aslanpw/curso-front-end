@@ -29,7 +29,7 @@ footer .container {
 .button01 {
     color: white !important; 
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin: 0 auto;
 }
 
@@ -129,6 +129,7 @@ footer .container {
 .botao01 {
     background-color: #744f33 !important;
     border-color: #744f33 !important;
+    margin: auto;
 }
 
 .botao01:hover {
@@ -139,6 +140,17 @@ footer .container {
 .mobile-response:hover {
     background-color: #3a3939 !important;
     border-color: #3a3939 !important;
+}
+
+.mensagem,
+#resultado {
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.erro {
+    border-color: #f00;
 }
 
 @media only screen and (min-width: 1800px) {
@@ -160,11 +172,15 @@ footer .container {
 }
 
 @media only screen and (max-width: 768px) {
+    .form-check-inline{
+        margin-right: 0 !important;
+    }
     .button01 {
         font-size: 1rem;
     }
     .botao01 {
-        margin: auto;
+        margin: auto 0;
+        max-width: 100% !important;
     }
     .margin-button {
         margin-top: 1.5rem !important;
