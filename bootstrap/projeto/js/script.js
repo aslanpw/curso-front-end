@@ -23,7 +23,7 @@ function validaCampo(elemento){
             this.classList.remove('erro');
             this.parentNode.classList.remove('erro');
         } else {
-            document.querySelector('.mensagem').innerHTML = "verifique o preenchimento dos campos em vermelho";
+            document.querySelector('.mensagem').innerHTML = "Verifique o preenchimento dos campos em vermelho";
             this.classList.add('erro');
             this.parentNode.classList.add('erro');
             return false;
@@ -48,7 +48,7 @@ function validaEmail(elemento){
             
         } else {
             
-            document.querySelector('.mensagem').innerHTML = "verifique o preenchimento dos campos em vermelho";
+            document.querySelector('.mensagem').innerHTML = "Verifique o preenchimento dos campos em vermelho";
             this.classList.add('erro');
             this.parentNode.classList.add('erro');
             return false;

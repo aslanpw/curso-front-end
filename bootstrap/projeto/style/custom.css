@@ -144,13 +144,12 @@ footer .container {
 
 .mensagem,
 #resultado {
-    font-size: 2rem;
+    font-size: 1rem;
     text-align: center;
-    padding: 2rem;
 }
 
 .erro {
-    border-color: #f00;
+    border-color: #f00 !important;
 }
 
 @media only screen and (min-width: 1800px) {
