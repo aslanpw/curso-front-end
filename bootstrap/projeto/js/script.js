@@ -1,13 +1,43 @@
 
 document.getElementById('formulario').addEventListener('submit', function( evento ) {
-    evento.preventDefault();
-    evento.stopPropagation();
-
     if(this.getAttribute('class').match(/erro/)) {
         return false;
+    } else {
+        alert("Felizes pelo contato! Responderemos o mais rápido possível.");
     }
 })
 
+document.getElementById('formulario02').addEventListener('submit', function( evento ) {
+    if(this.getAttribute('class').match(/erro/)) {
+        return false;
+    } else {
+        alert("Felizes pelo contato! Responderemos o mais rápido possível.");
+    }
+})
+
+function validaPacote(elemento){
+
+    elemento.addEventListener('focusout', function(event) {
+
+        event.preventDefault();
+
+				const letraValido = /^[a-z]/i;
+
+        if(this.value.match(letraValido) && letraValido != [0-9]) {
+            
+            document.querySelector('.mensagem02').innerHTML = "";
+            this.classList.remove('erro');
+            this.parentNode.classList.remove('erro');
+        } else {
+            document.querySelector('.mensagem02').innerHTML = "Verifique o preenchimento dos campos em vermelho";
+            this.classList.add('erro');
+            this.parentNode.classList.add('erro');
+            return false;
+        }
+
+    });
+
+}
 
 function validaCampo(elemento){
 
@@ -58,13 +88,18 @@ function validaEmail(elemento){
 
 }
 
+let camposPacote = document.querySelectorAll('input.pacote');
 let camposObrigatorios = document.querySelectorAll('input.obrigatorio');
 let campoEmail = document.querySelectorAll('input.email');
+
+for( let emFoco of camposPacote) {
+    validaPacote(emFoco);
+}
 
 for( let emFoco of camposObrigatorios) {
     validaCampo(emFoco);
 }
 
 for( let emFoco of campoEmail) {
-		validaEmail(emFoco);
+	validaEmail(emFoco);
 }

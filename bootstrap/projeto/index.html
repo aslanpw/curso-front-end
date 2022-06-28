@@ -55,6 +55,8 @@
             <div class="container line-bottom">
                 <div class="row align-mobile">
                     <div class="col">
+                        <form class="form" id="formulario02">
+                            <span class="mensagem02"></span>
                         <div class="col-md-12 col-sm-12">
                             <h2>Para onde vamos?</h2>
                         </div>
@@ -64,7 +66,7 @@
                                 <div class="col-md-4 col-sm-12 separador-mobile">
                                     <h6>Origem</h6>
                                     <div class="input-group">
-                                    <input class="form-control" type="search" placeholder="De onde vai sair?" aria-label="Search" style="border-right: none;">
+                                    <input class="form-control pacote" type="search" placeholder="De onde vai sair?" aria-label="Search" style="border-right: none;" required>
                                     <div class="input-group-append">
                                         <div class="input-group-text" style="background-color: #FFF"><i class="fas fa-search"></i></div>
                                     </div>
@@ -73,13 +75,13 @@
                                 <div class="col-md-4 col-sm-12 separador-mobile">
                                     <h6>Data de ida</h6>
                                     <div class="input-group">
-                                        <input class="form-control" type="date" placeholder="Data de ida">     
+                                        <input class="form-control" type="date" placeholder="Data de ida" required>     
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-sm-12 separador-mobile">
                                     <h6>Data de volta</h6>
                                     <div class="input-group">
-                                        <input class="form-control" type="date" placeholder="Data de volta">     
+                                        <input class="form-control" type="date" placeholder="Data de volta" required>     
                                     </div>
                                 </div>
                                 </div>
@@ -87,7 +89,7 @@
                                 <div class="col-md-4 col-sm-12 separador-mobile">
                                     <h6>Destino</h6>
                                     <div class="input-group">
-                                    <input class="form-control" type="search" placeholder="Para onde vai ?" aria-label="Search" style="border-right: none;">
+                                    <input class="form-control pacote" type="search" placeholder="Para onde vai ?" aria-label="Search" style="border-right: none;" required>
                                     <div class="input-group-append">
                                         <div class="input-group-text" style="background-color: #FFF"><i class="fas fa-search"></i></div>
                                     </div>
@@ -96,7 +98,7 @@
                                 <div class="col-md-4 col-sm-12 separador-mobile">
                                     <h6>Reservas</h6>
                                         <div class="input-group">
-                                            <input class="form-control" type="number" placeholder="Número de Quartos">
+                                            <input class="form-control" type="number" placeholder="Número de Quartos" required>
                                             <div class="input-group-append">
                                         </div>
                                     </div>
@@ -104,7 +106,7 @@
                                 <div class="col-md-4 col-sm-12 separador-mobile">
                                     <h6>Quantas pessoas por quarto?</h6>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="opcao1">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="opcao1" required>
                                         <label class="form-check-label" for="inlineRadio1">1</label>
                                     </div>
                                     <div class="form-check form-check-inline">
@@ -122,8 +124,9 @@
                                 </div> 
                                 </div>
                                 </div>
-                            <a class="btn btn-lg btn-success col-md-2 flex-center botao01"><p class="button01">Ver Pacotes</p></a>
+                            <button type="submit" class="btn btn-lg btn-success col-md-2 flex-center botao01"><p class="button01">Ver Pacotes</p></button>
                         </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -192,11 +195,11 @@
                         <form class="form" id="formulario">
                             <span class="mensagem"></span>
                             <div class="input-group">
-                                <input class="form-control obrigatorio" type="text" name="nome" placeholder="Digite seu nome">
+                                <input class="form-control obrigatorio" type="text" name="nome" placeholder="Digite seu nome" required>
                             </div>
 
                             <div class="input-group">
-                                <input class="form-control obrigatorio email" type="text" name="email" placeholder="Digite seu email">
+                                <input class="form-control obrigatorio email" type="text" name="email" placeholder="Digite seu email" required>
                             </div>
 
                             <div class="input-group">
