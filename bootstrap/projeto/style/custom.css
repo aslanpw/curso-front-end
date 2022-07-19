@@ -1,6 +1,6 @@
 
 section {
-    padding-top: 4rem;
+    padding: 4rem 0 0;
 }
 
 input, textarea {
@@ -142,6 +142,10 @@ footer .container {
     border-color: #3a3939 !important;
 }
 
+#cadastro {
+    padding: 0;
+}
+
 .mensagem,
 #resultado {
     font-size: 1rem;
@@ -150,6 +154,23 @@ footer .container {
 
 .erro {
     border-color: #f00 !important;
+}
+
+.background-personalizado03 {
+    background-color: #f9f3e4;
+}
+
+.breadcrumb {
+    background-color: #f9f3e4 !important;
+    text-align: center !important;
+}
+
+.progress-bar {
+    background-color: #6c6559 !important;
+}
+
+.progress-bar-striped {
+    background-size: 1rem 0.2rem !important;
 }
 
 @media only screen and (min-width: 1800px) {

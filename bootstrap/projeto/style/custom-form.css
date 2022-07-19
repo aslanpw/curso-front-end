@@ -1,0 +1,22 @@
+.form-row {
+    display: block !important;
+}
+
+.ficha {
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.2)
+}
+
+.background-personalizado03 {
+    background-color: #f9f3e4;
+}
+
+.breadcrumb {
+    background-color: #f9f3e4 !important;
+    text-align: center !important;
+}
+
+.margin-vertical-1rem {
+    margin: 0.5rem 0;
+}
