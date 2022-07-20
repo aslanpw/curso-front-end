@@ -173,6 +173,27 @@ footer .container {
     background-size: 1rem 0.2rem !important;
 }
 
+#carousel {
+    padding: 0;
+    background-color: #f9f3e4;
+}
+
+#carousel img {
+    filter: brightness(60%);
+    transition: all .5s;
+}
+
+#carousel img:hover {
+    filter: brightness(100%);
+    transition: all .5s;
+}
+
+#carousel-mobile {
+    display: none !important;
+    padding: 0;
+    background-color: #f9f3e4;
+}
+
 @media only screen and (min-width: 1800px) {
     .background-personalizado {
         background-position-y: 60rem;
@@ -278,6 +299,12 @@ footer .container {
     #block-color {
         justify-content: space-evenly !important;
         background-color: rgba(226, 226, 226, 0.781);
+    }
+    #carousel {
+        display: none !important;
+    }
+    #carousel-mobile {
+        display: block !important;
     }
 
 }

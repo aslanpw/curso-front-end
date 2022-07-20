@@ -11,6 +11,7 @@ document.getElementById('formulario02').addEventListener('submit', function( eve
     if(this.getAttribute('class').match(/erro/)) {
         return false;
     } else {
+        window.location.href = "./cadastro.html";
         alert("Felizes pelo contato! Responderemos o mais rápido possível.");
     }
 })
