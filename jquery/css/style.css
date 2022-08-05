@@ -217,7 +217,7 @@ a {
 	outline: none;
 }
 .owl-theme .owl-dots .active span {
-	background-color: #3a8bcd!important;
+	background-color: var(--quaternary-color)!important;
 }
 .owl-theme .owl-dots .owl-dot span {
 	background-color: #aaa;
@@ -356,7 +356,7 @@ a {
 	transition: all 0.5s;
 }
 .footer .footer-menu a:hover {
-	color: #3a8bcd;
+	color: var(--quaternary-color);
 	text-decoration: none;
 }
 .footer .social-icons {
